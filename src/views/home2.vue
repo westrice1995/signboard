@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div class="page">
-            <router-view></router-view>
-        </div>
+    <div class="page1">
+        <div class="title"></div>
     </div>
 </template>
 
@@ -32,3 +30,14 @@ export default {
     },
 }
 </script>
+
+<style lang="less">
+.page1 {
+    width: 7500px;
+    height: 3071px;
+    background: url('../assets/newImg/bg2.jpg') no-repeat;
+    background-attachment:fixed;
+    .title {
+    }
+}
+</style>
