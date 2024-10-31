@@ -2,9 +2,7 @@
 
 > A Vue.js project
 数据可视化
-## 项目预览地址
-https://bym110.github.io/vue-echarts/preview
-## Build Setup
+
 
 ``` bash
 # install dependencies
@@ -18,8 +16,7 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-```
-## 三个大屏模板 样式还是比较全的 包括世界地图、中国地图、canvas转盘等
+
 ### page1 
 ![image](src/assets/page1.jpg)
 ### page2 
