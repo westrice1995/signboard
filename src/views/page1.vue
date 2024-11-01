@@ -1,6 +1,10 @@
 <template>
     <div class="page1">
-        <div class="title">东莞市松山湖高新区·无度新城运营中心</div>
+        <div class="content">
+            <div class="left">
+                <div class="title1">东莞市松山湖高新区·无度新城运营中心</div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -456,6 +460,19 @@ export default {
     width: 5532px;
     height: 3265px;
     background: url('../assets/newImg/bg1.jpg') no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
+
+    .content {
+        padding-top: 140px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 2580px;
+            height: 100%;
+            background: #000;
+        }
+    }
 }
 </style>
