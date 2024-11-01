@@ -2,430 +2,89 @@
     <div class="page1">
         <div class="content">
             <div class="left">
-                <div class="title1">东莞市松山湖高新区·无度新城运营中心</div>
+                <div class="title1"><img style='width: 2300px' src="../assets/newImg/title_1.png" alt="" class="src">
+                </div>
+                <div class="leftTop">
+                    <div class="leftCon">
+                        <img src="../assets/zujian1/small_titile_1.png" alt="" class="src">
+                        <div class="conBox">
+                            <div class="corner-box first">
+                                <div class="number">50</div>
+                                <div class="text">覆盖小区(个)
+                                </div>
+                            </div>
+                            <div class="corner-box">
+                                <div class="number">66</div>
+                                <div class="text">覆盖公共机构(个)</div>
+                            </div>
+                        </div>
+                        <div class="conBox" style="position: relative;">
+                            <div class="corner-box spcCorner">
+                                <div>
+                                    <div class="text"><span class="text1">覆盖总户数</span><span class="number2">15739</span>
+                                    </div>
+                                    <div class="text"><span class="text1">参与户数</span><span class="number2">12132</span>
+                                    </div>
+                                    <div class="text"><span class="text1">总设备数</span><span class="number2">192</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:inline-block;position: absolute;left: 598px;bottom:0">
+                                <img class='usl' src="../assets/zujian1/tubiao1.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightCon">
+                        <img src="../assets/zujian1/small_titile_2.png" alt="" class="src">
+                        <div style="display:inline-block;position: absolute;left: 0px;bottom:30px">
+                            <img class='usl' src="../assets/zujian1/tubiao2.png" alt="" srcset="">
+                        </div>
+                        <div class="lightSpan"><span class="span1">优</span><span class="span2">263次</span><span
+                                class="span3">97.7%</span></div>
+                        <div class="lightSpan"><span class="span1">良</span><span class="span2">2次</span><span
+                                class="span3">0.74%</span></div>
+                        <div class="lightSpan"><span class="span1">空</span><span class="span2">0次</span><span
+                                class="span3">0.00%</span></div>
+                        <div class="lightSpan"><span class="span1">差</span><span class="span2">4次</span><span
+                                class="span3">1.49%</span></div>
+                    </div>
+                </div>
+                <div class="leftTop">
+                    <div class="leftCon">
+                        <img src="../assets/zujian1/small_titile_1.png" alt="" class="src">
+                    </div>
+                    <div class="rightCon">
+                        <img src="../assets/zujian1/small_titile_2.png" alt="" class="src">
+                    </div>
+                </div>
+                <div class="leftTop">
+                    <div class="leftCon">
+                        <img src="../assets/zujian1/small_titile_1.png" alt="" class="src">
+                    </div>
+                    <div class="rightCon">
+                        <img src="../assets/zujian1/small_titile_2.png" alt="" class="src">
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="title1"><img src="../assets/newImg/title_2.png" alt="" class="src"></div>
+            </div>
+            <div class="right">
+                <div class="title1"><img src="../assets/newImg/title_3.png" alt="" class="src"></div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-const chart1 = () => import('./components/page1/chart1');
-const chart2 = () => import('./components/page1/chart2');
-const chart4 = () => import('./components/page1/chart4');
-const chart3 = () => import('./components/page1/chart3');
-const chart5 = () => import('./components/page1/chart5');
-const chart6 = () => import('./components/page1/chart6');
-const chart7 = () => import('./components/page1/chart7');
-const chart8 = () => import('./components/page1/chart8');
-const chart9 = () => import('./components/page1/chart9');
-const areaChart = () => import('./components/areaChart');
-const pie = () => import('./components/pie')
-const worldMap = () => import('./components/page1/worldMap');
-const center = () => import('./components/page1/center');
 
 export default {
     name: 'page1',
     props: {
-        selectRangeDate: Array
-    },
-    components: {
-        center,// 中心
-        chart1, // 面积图
-        chart2, // 柱图
-        pie, // 饼图
-        worldMap, // 世界地图
-        chart4, // 圆环
-        chart3, // 柱图
-        chart5, //折线图
-        chart6, // 饼环图
-        chart7,// 柱图
-        chart8, // 漏斗图
-        chart9, //柱图
-        areaChart // 面积图
+
     },
     data() {
         return {
-
-            data1: { // 柱图数据1
-                name: '柱图数据1',
-                number: '100次',
-                data: ["排行1", "排行2", "排行3", "排行4", "排行5"],
-                color: '192,35,42',
-                value: [60, 50, 40, 30, 20]
-            },
-            data2: {// 饼图数据1
-                title: "饼图数据1分类占比",
-                color: '#BE232A',
-
-                data: [
-                    {
-                        value: 60,
-                        name: '分类1',
-                        itemStyle: {
-                            color: '#a262f2'
-                        }
-
-                    },
-                    {
-                        value: 20,
-                        name: '分类2',
-                        itemStyle: {
-                            color: '#2ca8fe'
-                        }
-                    },
-                    {
-                        value: 80,
-                        name: '分类3',
-                        itemStyle: {
-                            color: '#feac2c'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '分类4',
-                        itemStyle: {
-                            color: '#c0232a'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '分类5',
-                        itemStyle: {
-                            color: '#2cd9fe'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '分类6',
-                        itemStyle: {
-                            color: '#ff787e'
-                        }
-                    },
-                    {
-                        value: 30,
-                        name: '其他',
-                        itemStyle: {
-                            color: '#252448'
-                        }
-                    }
-                ],
-            },
-            data3: { // 柱图数据2
-                name: '柱图数据2',
-                number: '100次',
-                data: ["排行1", "排行2", "排行3", "排行4", "排行5"],
-                color: '40,112,232',
-                value: [6, 5, 4, 3, 2]
-            },
-            // 饼图数据2
-            data4: {
-                title: "饼图数据2分类占比",
-                color: '#2C7BFE',
-                data: [
-                    {
-                        value: 20,
-                        name: '分类1',
-                        itemStyle: {
-                            color: '#feed2c'
-                        }
-
-                    },
-                    {
-                        value: 20,
-                        name: '分类2',
-                        itemStyle: {
-                            color: '#2ca8fe'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '分类3',
-                        itemStyle: {
-                            color: '#feac2c'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '分类4',
-                        itemStyle: {
-                            color: '#2c7bfe'
-                        }
-                    },
-                    {
-                        value: 100,
-                        name: '其他',
-                        itemStyle: {
-                            color: '#252448'
-                        }
-                    }
-                ],
-            },
-            // 环形图数据
-            data5: {
-                title: '环形图数据1',
-                data: [
-                    {
-                        value: 335,
-                        name: '模拟1',
-                        itemStyle: {
-                            color: '#252448'
-                        }
-                    },
-                    {
-                        value: 310,
-                        name: '模拟2',
-                        itemStyle: {
-                            color: '#2ca8fe'
-                        }
-                    },
-                    {
-                        value: 234,
-                        name: '模拟3',
-                        itemStyle: {
-                            color: '#feed2c'
-                        }
-                    },
-                    {
-                        value: 135,
-                        name: '其他',
-                        itemStyle: {
-                            color: '#2871ea'
-                        }
-                    },
-                    {
-                        value: 200,
-                        name: '模拟4',
-                        itemStyle: {
-                            color: '#fe672c'
-                        }
-                    }
-                ]
-            },
-            // 环形数据2
-            data6: {
-                title: '环形数据2',
-                data: [
-                    {
-                        value: 335,
-                        name: '模拟1',
-                        itemStyle: {
-                            color: '#69f262'
-                        }
-                    },
-                    {
-                        value: 310,
-                        name: '模拟2',
-                        itemStyle: {
-                            color: '#c0232a'
-                        }
-                    },
-                    {
-                        value: 234,
-                        name: '模拟3',
-                        itemStyle: {
-                            color: '#2cfcfe'
-                        }
-                    },
-                    {
-                        value: 135,
-                        name: '其他',
-                        itemStyle: {
-                            color: '#252448'
-                        }
-                    },
-                    {
-                        value: 200,
-                        name: '模拟4',
-                        itemStyle: {
-                            color: '#a262f2'
-                        }
-                    }
-                ]
-            },
-            // 模块二数据
-            data7: {
-                title: '标题',
-                data: [
-                    {
-                        value: 70,
-                        name: '数据1',
-                        itemStyle: {
-                            color: '#c0232a'
-                        }
-                    },
-                    {
-                        value: 60,
-                        name: '数据2',
-                        itemStyle: {
-                            color: '#2870e8'
-                        }
-                    },
-                ],
-                data1: [
-                    {
-                        value: 40,
-                        name: '方式1',
-                        itemStyle: {
-                            color: '#c0232a'
-                        }
-                    },
-                    {
-                        value: 60,
-                        name: '方式2',
-                        itemStyle: {
-                            color: '#2870e8'
-                        }
-                    },
-                ]
-            },
-            // 模块二数据
-            data8: {
-                title: '标题',
-                data: [
-                    {
-                        value: 80,
-                        name: '数据1',
-                        itemStyle: {
-                            color: '#c0232a'
-                        }
-                    },
-                    {
-                        value: 60,
-                        name: '数据2',
-                        itemStyle: {
-                            color: '#2870e8'
-                        }
-                    },
-                ],
-                data1: [
-                    {
-                        value: 40,
-                        name: '方式1',
-                        itemStyle: {
-                            color: '#c2232a'
-                        }
-                    },
-                    {
-                        value: 60,
-                        name: '方式2',
-                        itemStyle: {
-                            color: '#fe672c'
-                        }
-                    },
-                    {
-                        value: 40,
-                        name: '方式3',
-                        itemStyle: {
-                            color: '#a262f2'
-                        }
-                    },
-                    {
-                        value: 20,
-                        name: '方式4',
-                        itemStyle: {
-                            color: '#2870e8'
-                        }
-                    },
-                    {
-                        value: 80,
-                        name: '方式5',
-                        itemStyle: {
-                            color: '#feed2c'
-                        }
-                    }
-                ]
-            },
-            // 模块三面积图
-            configData9: {
-                title: '【标题】',
-                color: '#75deef',
-                name: ['（人）', '（人）'],
-                data: [
-                    {
-                        name: '数据1',
-                        color: ['#feed2c', '#353103'],
-                        data: [240, 132, 101, 134, 90, 170, 110]
-                    },
-                    {
-                        name: '数据2',
-                        color: ['#2871ea', '#0a1b41'],
-                        data: [20, 102, 101, 134, 190, 150, 120]
-                    },
-                    {
-                        name: '数据3',
-                        color: ['#935adf', '#230f3e'],
-                        data: [100, 32, 101, 134, 150, 110, 180]
-                    },
-                    {
-                        name: '数据4',
-                        color: ['#e65f2d', '#551f0b'],
-                        data: [120, 122, 141, 144, 60, 220, 120]
-                    }
-                ]
-            },
-            // 模块三柱图
-            colorsData: [
-                {
-                    itemStyle: {
-                        color: "#2c7bfe",
-
-                    },
-                    name: '数据1',
-                    value: 255
-                },
-                {
-                    itemStyle: {
-                        color: "#c2232a",
-
-                    },
-                    name: '数据2',
-                    value: 212
-                },
-                {
-                    itemStyle: {
-                        color: "#feed2c",
-
-                    },
-                    name: '数据3',
-                    value: 155
-                },
-                {
-                    itemStyle: {
-                        color: "#a262f2",
-
-                    },
-                    name: '数据4',
-                    value: 55
-                },
-                {
-                    itemStyle: {
-                        color: "#62d5f2",
-                    },
-                    name: '数据5',
-                    value: 80
-                },
-                {
-                    itemStyle: {
-                        color: "#fe672c",
-                    },
-                    name: '数据6',
-                    value: 160
-                },
-                {
-                    itemStyle: {
-                        color: "#69f262",
-                    },
-                    name: '数据7',
-                    value: 114
-                },
-                {
-                    itemStyle: {
-                        color: "#2ca8fe",
-                    },
-                    name: '数据8',
-                    value: 20
-                },
-            ],
             resizeFn: null
         }
     },
@@ -456,11 +115,18 @@ export default {
 </script>
 
 <style lang="less">
+img.usl {
+    user-select: none;
+    /* 禁止用户选择 */
+    pointer-events: none;
+}
+
 .page1 {
     width: 5532px;
     height: 3265px;
     background: url('../assets/newImg/bg1.jpg') no-repeat;
     background-attachment: fixed;
+
 
     .content {
         padding-top: 140px;
@@ -471,8 +137,145 @@ export default {
         .left {
             width: 2580px;
             height: 100%;
-            background: #000;
+            padding-left: 230px;
+
+            .title1 {
+                margin-top: 260px;
+                position: relative;
+                top: -7px;
+                left: -17px;
+            }
+
+            .leftTop {
+                display: flex;
+                justify-content: space-between;
+
+                .leftCon {
+                    display: inline-block;
+                }
+
+                .rightCon {
+                    display: inline-block;
+                    position: relative;
+
+                    .lightSpan {}
+                }
+            }
+        }
+
+        .middle {
+            width: 1100px;
+            height: 100%;
+            border-left: 15px solid rgba(14, 47, 135, 0.5);
+
+            .title1 {
+                margin-top: 260px;
+                position: relative;
+                top: -18px;
+                left: 0px;
+            }
+        }
+
+        .right {
+            width: 2580px;
+            height: 100%;
+
+            .title1 {
+                margin-top: 260px;
+                position: relative;
+                top: 2px;
+                left: 25px;
+            }
         }
     }
+
+    .corner-box {
+        position: relative;
+        display: inline-block;
+        padding: 20px 40px;
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 24px;
+        position: relative;
+        width: 420px;
+        height: 247px;
+        // csss实现四角边框
+        box-shadow: 0 0 1.5vw #1f69b9b9 inset;
+        background: linear-gradient(#b5f4ff, #b5f4ff) left top,
+            linear-gradient(#b5f4ff, #b5f4ff) left top,
+            linear-gradient(#b5f4ff, #b5f4ff) right top,
+            linear-gradient(#b5f4ff, #b5f4ff) right top,
+            linear-gradient(#b5f4ff, #b5f4ff) left bottom,
+            linear-gradient(#b5f4ff, #b5f4ff) left bottom,
+            linear-gradient(#b5f4ff, #b5f4ff) right bottom,
+            linear-gradient(#b5f4ff, #b5f4ff) right bottom;
+        background-repeat: no-repeat;
+        border: 7px solid #1392ff;
+        border-radius: 5px;
+        background-size: 5px 30px, 30px 5px, 5px 30px, 30px 5px;
+
+        .number {
+            font-size: 120px;
+            height: 120px;
+            line-height: 120px;
+            /* 字体大小 */
+            font-weight: bold;
+            /* 字体粗细 */
+            background: linear-gradient(to bottom, #00bfff, #ffffff);
+            /* 渐变颜色 */
+            -webkit-background-clip: text;
+            /* 背景裁剪为文字 */
+            -webkit-text-fill-color: transparent;
+            margin-top: 10px;
+        }
+
+        .text {
+            margin-top: 5px;
+            font-size: 40px;
+        }
+    }
+
+    .corner-box.first {
+        margin-left: 100px;
+        margin-right: 80px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .corner-box.spcCorner {
+        width: 460px;
+        height: 374px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+
+        /* 水平居中 */
+        align-items: center;
+
+        .text {
+            font-size: 45px;
+            width: 400px;
+            line-height: 85px;
+
+            .text1 {
+                float: left;
+                font-weight: bold
+            }
+
+            .number2 {
+                background: linear-gradient(to bottom, #a4d7e7, #ffffff);
+                /* 渐变颜色 */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+                float: right;
+            }
+        }
+    }
+
+
+
 }
 </style>
