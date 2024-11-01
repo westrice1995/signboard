@@ -39,6 +39,10 @@
                         <div style="display:inline-block;position: absolute;left: 0px;bottom:30px">
                             <img class='usl' src="../assets/zujian1/tubiao2.png" alt="" srcset="">
                         </div>
+                        <div style="display:inline-block;position: absolute;left: 0px;bottom:30px">
+                            <img class='usl' src="../assets/zujian1/light.png" alt="" srcset="">
+                        </div>
+
                         <div class="lightSpan"><span class="span1">优</span><span class="span2">263次</span><span
                                 class="span3">97.7%</span></div>
                         <div class="lightSpan"><span class="span1">良</span><span class="span2">2次</span><span
